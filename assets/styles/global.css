@@ -1,0 +1,21 @@
+body {
+  font-family: Montserrat;
+  margin: 0;
+  padding: 0;
+}
+
+.font-small {
+  font-size: 14px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.font-family-title {
+  font-family: Playfair Display;
+}
+
+.text-color-default{
+  color: #757575;
+}
