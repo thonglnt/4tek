@@ -6,11 +6,25 @@
         <!-- Logo and Social Media -->
         <div class="col-12 col-md-4 mb-4">
           <div class="footer-logo d-grid justify-content-center">
-            <img src="~/assets/imgs/logo.png" alt="Logo" class="logo mb-3" />
+            <NuxtImg
+              loading="lazy"
+              src="logo.png"
+              alt="Logo"
+              class="logo mb-3"
+              width="110"
+              height="65"
+              style="object-fit: cover"
+            />
             <div class="social-icons d-flex gap-2 justify-content-between">
-              <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="social-icon" aria-label="twitter"
+                ><i class="bi bi-twitter"></i
+              ></a>
+              <a href="#" class="social-icon" aria-label="facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" class="social-icon" aria-label="linkedin"
+                ><i class="bi bi-linkedin"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -75,7 +89,7 @@
 <style scoped>
 .footer {
   position: relative;
-  background: url("~/assets/imgs/bg-footer.jpg") no-repeat center center,
+  background: url("/bg-footer.jpg") no-repeat center center,
     linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     linear-gradient(180deg, rgba(0, 10, 255, 0.5) 0%, rgba(0, 0, 0, 0) 136.61%);
   background-blend-mode: overlay;

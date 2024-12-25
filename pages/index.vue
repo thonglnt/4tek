@@ -1,30 +1,28 @@
 <template>
-  <div class="homepage">
+  <div
+    class="homepage"
+    :style="{
+      backgroundImage: `url('/bg2.png')`,
+      height: '80vh',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+    }"
+  >
     <Header />
     <Banner />
     <div class="scroll-icon" @click="handleScrollAction">
       <i :class="scrollTop ? 'bi bi-chevron-up' : 'bi bi-chevron-down'"></i>
     </div>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1440 120"
-      preserveAspectRatio="xMidYMin slice"
-      stroke="#fff"
-    >
-      <path
-        fill="#fff"
-        stroke="#fff"
-        fill-opacity="1"
-        d="M0,0 C360,120 1080,120 1440,0 L1440,120 L0,120 Z"
-      />
-    </svg>
   </div>
   <div class="d-md-none d-block wizard-custom">
-    <img
+    <NuxtImg
       class="d-flex m-auto"
       style="width: 90vw"
-      src="~/assets/imgs/ong-tien.png"
+      src="ong-tien.png"
       alt="Wizard"
+      format="webp"
+      quality="80"
+      loading="lazy"
     />
   </div>
   <About />
@@ -104,10 +102,8 @@ onBeforeUnmount(() => {
 .scroll-icon:hover i {
   color: #000;
 }
+
 .homepage {
-  position: relative;
-  background: url("~/assets/imgs/bg.jpg") no-repeat center center;
-  background-size: cover;
   color: #fff;
   text-align: center;
   overflow: hidden;

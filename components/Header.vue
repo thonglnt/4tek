@@ -7,7 +7,15 @@
       <div class="container">
         <!-- Logo -->
         <a v-if="!isMenuOpen" class="navbar-brand" href="#">
-          <img src="~/assets/imgs/logo.png" alt="Logo" class="logo" />
+          <NuxtImg
+            loading="lazy"
+            src="logo.png"
+            alt="Logo"
+            class="logo"
+            width="85"
+            height="50"
+            style="object-fit: cover"
+          />
         </a>
 
         <!-- Mobile flag -->
@@ -31,7 +39,14 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <img :src="selectedFlag.src" :alt="selectedFlag.alt" />
+                <NuxtImg
+                  loading="lazy"
+                  :src="selectedFlag.src"
+                  :alt="selectedFlag.alt"
+                  width="20"
+                  height="15"
+                  style="object-fit: cover"
+                />
               </a>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <li
@@ -44,10 +59,14 @@
                     <div style="width: 15px">
                       <span v-if="flag.label === selectedFlag.label">✔</span>
                     </div>
-                    <img
+                    <NuxtImg
+                      loading="lazy"
                       :src="flag.src"
                       :alt="flag.alt"
                       class="flag-icon mx-2"
+                      width="20"
+                      height="15"
+                      style="object-fit: cover"
                     />
                     <span>{{ flag.label }}</span>
                   </div>
@@ -100,7 +119,14 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <img :src="selectedFlag.src" :alt="selectedFlag.alt" />
+                <NuxtImg
+                  loading="lazy"
+                  :src="selectedFlag.src"
+                  :alt="selectedFlag.alt"
+                  width="40"
+                  height="40"
+                  style="object-fit: cover"
+                />
               </a>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <li
@@ -113,10 +139,14 @@
                     <div style="width: 15px">
                       <span v-if="flag.label === selectedFlag.label">✔</span>
                     </div>
-                    <img
+                    <NuxtImg
+                      loading="lazy"
                       :src="flag.src"
                       :alt="flag.alt"
                       class="flag-icon mx-2"
+                      width="20"
+                      height="15"
+                      style="object-fit: cover"
                     />
                     <span class="font-small">{{ flag.label }}</span>
                   </div>
@@ -132,12 +162,10 @@
 
 <script setup>
 import { ref } from "vue";
-import vietnamFlag from "~/assets/imgs/vietnam.png";
-import americaFlag from "~/assets/imgs/america.png";
 
 const flags = [
-  { src: vietnamFlag, alt: "Vietnamese", label: "Vietnamese" },
-  { src: americaFlag, alt: "English", label: "English" },
+  { src: "/vietnam.png", alt: "Vietnamese", label: "Vietnamese" },
+  { src: "/america.png", alt: "English", label: "English" },
 ];
 
 const selectedFlag = ref(flags[1]);

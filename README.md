@@ -12,7 +12,7 @@ Project demo for apply front end developer in 4tek
 ## Technical
 
 - **Frontend:**
-  - **Vue.js**: A progressive JavaScript framework for building user interfaces.
+  - **VueJs**: A progressive JavaScript framework for building user interfaces.
   - **Nuxt 3**: A powerful meta-framework for Vue.js with server-side rendering capabilities.
   - **Bootstrap 5**: A responsive design framework for styling and layout.
   - **Swiper**: A modern touch slider for carousels.
@@ -36,7 +36,6 @@ Project demo for apply front end developer in 4tek
 └── 📁pages
     └── index.vue
 └── 📁public
-    └── favicon.ico
     └── robots.txt
 └── 📁server
     └── tsconfig.json

@@ -2,7 +2,16 @@
   <section class="countdown">
     <!-- Wizard Image -->
     <div class="wizard d-none d-md-block">
-      <img src="~/assets/imgs/ong-tien.png" alt="Wizard" />
+      <NuxtImg
+        src="ong-tien.png"
+        alt="Wizard"
+        width="400"
+        height="500"
+        style="object-fit: cover"
+        loading="lazy"
+        format="webp"
+        quality="80"
+      />
     </div>
 
     <!-- Countdown Content -->

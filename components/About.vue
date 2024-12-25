@@ -29,7 +29,7 @@
       <div class="col-md-6 about-right">
         <div class="info-box">
           <div class="info-item d-flex">
-            <img src="~/assets/imgs/time.png" alt="24-hour" />
+            <NuxtImg loading="lazy" src="time.png" alt="24-hour" />
             <div>
               <h4 class="fs-4 fw-bolder">24 - Hour</h4>
               <p class="font-small text-color-default">
@@ -39,7 +39,7 @@
             </div>
           </div>
           <div class="info-item d-flex">
-            <img src="~/assets/imgs/design.png" alt="Design" />
+            <NuxtImg loading="lazy" src="design.png" alt="Design" />
             <div>
               <h4 class="fs-4 fw-bolder">Design</h4>
               <p class="font-small text-color-default">
@@ -50,7 +50,7 @@
             </div>
           </div>
           <div class="info-item d-flex">
-            <img src="~/assets/imgs/team.png" alt="Team" />
+            <NuxtImg loading="lazy" src="team.png" alt="Team" />
             <div>
               <h4 class="fs-4 fw-bolder">Team</h4>
               <p class="font-small text-color-default">
@@ -66,8 +66,15 @@
 
     <!-- Witch and Map -->
     <div class="map-with-witch mt-5">
-      <img src="~/assets/imgs/pin-map.png" alt="Map" class="map" />
-      <img src="~/assets/imgs/wizard-girl.png" alt="Witch" class="witch" />
+      <NuxtImg
+        format="webp"
+        quality="80"
+        loading="lazy"
+        src="pin-map.png"
+        alt="Map"
+        class="map"
+      />
+      <NuxtImg loading="lazy" src="wizard-girl.png" alt="Witch" class="witch" />
     </div>
   </section>
 </template>

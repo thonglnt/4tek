@@ -23,10 +23,15 @@
         }"
       >
         <SwiperSlide v-for="(partner, index) in partners" :key="index">
-          <img
-            :src="partner.image"
+          <NuxtImg
+            :src="partner"
             :alt="`Partner ${index + 1}`"
             class="partner-logo"
+            loading="lazy"
+            width="200"
+            height="100"
+            format="webp"
+            quality="80"
           />
         </SwiperSlide>
         <div class="custom-prev"><i class="bi bi-chevron-left"></i></div>
@@ -38,26 +43,17 @@
 
 <script setup>
 import "swiper/css";
-import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Navigation } from "swiper/modules";
 
-import partner1 from "~/assets/imgs/partner1.png";
-import partner2 from "~/assets/imgs/partner2.png";
-import partner3 from "~/assets/imgs/partner3.png";
-import partner4 from "~/assets/imgs/partner4.png";
-import partner5 from "~/assets/imgs/partner5.png";
-import partner6 from "~/assets/imgs/partner6.png";
-import partner7 from "~/assets/imgs/partner7.png";
-
 const partners = [
-  { image: partner1 },
-  { image: partner2 },
-  { image: partner3 },
-  { image: partner4 },
-  { image: partner5 },
-  { image: partner6 },
-  { image: partner7 },
+  "partner1.png",
+  "partner2.png",
+  "partner3.png",
+  "partner4.png",
+  "partner5.png",
+  "partner6.png",
+  "partner7.png",
 ];
 </script>
 

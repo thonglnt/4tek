@@ -18,6 +18,7 @@
         class="btn custom-btn"
         :class="inputStyle === 'transparent' ? 'transparent-btn' : 'white-btn'"
         type="button"
+        aria-label="enter"
       >
         <i :class="linkIcon"></i>
       </button>
