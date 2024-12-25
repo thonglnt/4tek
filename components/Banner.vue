@@ -5,8 +5,6 @@
       <NuxtImg
         src="ong-tien.png"
         alt="Wizard"
-        width="400"
-        height="500"
         style="object-fit: cover"
         loading="lazy"
         format="webp"
